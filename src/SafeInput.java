@@ -238,6 +238,45 @@ public class SafeInput
         return userAnswer;
     }
 
+    /**
+     *
+     * @param prompt prompt for the user that reads in the middle of the header
+     */
+    public static String prettyHeader(String prompt)
+    {
+        int promptLength = prompt.length();
+        int textGap = (54-promptLength)/2;
+
+        for(int x = 1; x <= 60; x++)
+        {
+            System.out.print("*");
+        }
+        System.out.print("\n");
+        for(int x = 1; x <= 3; x++)
+        {
+            System.out.print("*");
+        }
+        for(int x = 1; x <= textGap; x++)
+        {
+            System.out.print(" ");
+        }
+        System.out.print(prompt + ": ");
+        for(int x = 1; x <= textGap; x++);
+        {
+            System.out.print(" ");
+        }
+        for(int x = 1; x <= 3; x++)
+        {
+            System.out.print("*");
+        }
+        System.out.print("\n");
+        for(int x = 1; x <= 60; x++)
+            {
+            System.out.print("*");
+            }
+        return;
+    }
+
 
 
 }
