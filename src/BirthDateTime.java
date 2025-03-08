@@ -39,7 +39,7 @@ public class BirthDateTime
                     {
                         birthDay = SafeInput.getRangedInt(input, "Please enter the day you were born", 1, 28);
                     }
-                    else;
+                    else
                     {
                         birthDay = SafeInput.getRangedInt(input, "Please enter the day you were born", 1, 28);
                     }
