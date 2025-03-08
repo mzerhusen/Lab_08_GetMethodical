@@ -10,6 +10,7 @@ public class BirthDateTime
         int birthDay = 0;
         int birthHour = 0;
         int birthMinute = 0;
+        String minuteString = "";
 
         birthYear = SafeInput.getRangedInt(input, "Please enter the year you were born", 1900, 2025);
         birthMonth = SafeInput.getRangedInt(input, "Please enter the month you were born", 1, 12);
@@ -45,9 +46,8 @@ public class BirthDateTime
                     }
                     break;
             }
-        birthHour = SafeInput.getRangedInt(input, "Please enter the hour you were born in 24 hour time", 1, 24);
+        birthHour = SafeInput.getRangedInt(input, "Please enter the hour you were born in 24 hour time", 0, 23);
         birthMinute = SafeInput.getRangedInt(input, "Please enter the minute you were born", 0, 59);
-        System.out.println("You said you were born at " + birthHour + ":" + birthMinute + ", on " + birthMonth + "/" + birthDay + "/" + birthYear + ".");
-
+        System.out.printf("You said you were born at %d:%02d, on %d/%2d/%d.", birthHour, birthMinute, birthMonth, birthDay, birthYear);
     }
 }
