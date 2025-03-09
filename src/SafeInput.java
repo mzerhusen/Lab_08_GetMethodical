@@ -246,7 +246,6 @@ public class SafeInput
     {
         int promptLength = prompt.length();
         int textGap = (54-promptLength)/2;
-        String userSelection = "";
 
         for(int x = 1; x <= 60; x++)
         {

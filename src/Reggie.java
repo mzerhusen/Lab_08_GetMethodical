@@ -1,7 +1,4 @@
-import javax.xml.transform.Source;
-import java.util.Objects;
 import java.util.Scanner;
-import java.util.Vector;
 
 public class Reggie
 {
