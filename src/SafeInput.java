@@ -246,6 +246,7 @@ public class SafeInput
     {
         int promptLength = prompt.length();
         int textGap = (54-promptLength)/2;
+        String userSelection = "";
 
         for(int x = 1; x <= 60; x++)
         {
@@ -261,7 +262,7 @@ public class SafeInput
             System.out.print(" ");
         }
         System.out.print(prompt + ": ");
-        for(int x = 1; x <= textGap; x++);
+        for(int x = 1; x <= (textGap - 2); x++)
         {
             System.out.print(" ");
         }
@@ -274,7 +275,7 @@ public class SafeInput
             {
             System.out.print("*");
             }
-        return;
+        return null;
     }
 
 
