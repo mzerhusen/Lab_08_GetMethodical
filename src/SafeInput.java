@@ -230,7 +230,7 @@ public class SafeInput
             }
             else
             {
-                System.out.print(userAnswer + "is not a valid entry ");
+                System.out.print(userAnswer + " is not a valid entry ");
             }
         }
         while(!validInput);
@@ -262,9 +262,17 @@ public class SafeInput
             System.out.print(" ");
         }
         System.out.print(prompt + ": ");
-        for(int x = 1; x <= (textGap - 2); x++)
+        if(textGap % 2 == 0)
+            for(int x = 1; x <= (textGap - 1); x++)
+            {
+                System.out.print(" ");
+            }
+        else
         {
-            System.out.print(" ");
+            for(int x = 1; x <= (textGap - 2); x++)
+            {
+                System.out.print(" ");
+            }
         }
         for(int x = 1; x <= 3; x++)
         {
@@ -275,6 +283,8 @@ public class SafeInput
             {
             System.out.print("*");
             }
+        System.out.print("\n");
+
         return null;
     }
 
