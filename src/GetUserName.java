@@ -1,13 +1,13 @@
 import java.util.Scanner;
-
 public class GetUserName
 {
     public static void main(String[] args)
     {
-        Scanner input = new Scanner(System.in);
-        String userName;
-
-        userName = SafeInput.getNonZeroLenString(input, "Enter your username: ");
-        System.out.println("You said your username is " + userName);
+        Scanner in = new Scanner(System.in);
+        String firstName = "";
+        String lastName = "";
+        firstName = SafeInput.getNonZeroLenString(in, "Enter your first name: ");
+        lastName = SafeInput.getNonZeroLenString(in, "Enter your last name: M");
+        System.out.println("\nYour full name is: " + firstName + " " + lastName);
     }
 }
